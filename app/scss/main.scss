@@ -1,0 +1,113 @@
+@import "variables.scss";
+
+*{
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+/**** Logo ***/
+.logo{
+	max-width: 108px;
+	position: absolute;
+	img{
+		width: 100%;
+	}
+}
+/***** Nav- bar *******/
+
+.main-nav{
+	float: right;
+	opacity: 0;
+	visibility: hidden;
+	margin: 20px 20px 0 0;
+	ul{
+		list-style: none;
+		li{
+			font-size: 24px;
+			margin-bottom: .5em;
+		}
+	}
+}
+/******** Nav button ***********/
+.btn-nav{
+	float: right;
+	height: 50px;
+	width: 50px;
+	margin: 15px;
+	border: 0;
+	background: none;
+	&:focus{
+		outline: none;
+	}
+
+	span{
+		display: block;
+		border: 0;
+		width: 40px;
+		height: 8px;
+		border-radius: 5px;
+		background-color: white;
+		position: relative;
+		transition: all 0.5s ease;
+
+		&:after,&:before{
+			    content: "";
+				display: block;
+				width: 40px;
+				height: 8px;
+				background-color: white;
+				position: absolute;
+				border-radius: 5px;
+		}
+
+		&:after{
+			top: 16px;
+		}
+
+		&:before{
+			top: -16px;
+		}
+	}
+	&.open{
+		&+ .main-nav{
+			opacity: 1;
+			visibility: visible;
+		}
+		span{
+			transform: rotate(45deg);
+			&:before{
+				opacity: 0;
+			}
+			&:after{
+				top:0px;
+				transform: rotate(-90deg);
+			}
+		}
+	}
+
+}
+
+#header-background{
+	background: linear-gradient(rgba(0,0,0, 0.5), transparent);
+	height: 405px;
+}
+
+#header{
+	background: url(../img/background.jpg);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	height: 405px;
+	position: relative;
+	&::after{
+		content: "";
+		clear: both;
+		display: table;
+
+	} 
+}

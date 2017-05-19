@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+/**** Logo ***/
+.logo {
+  max-width: 108px;
+  position: absolute; }
+  .logo img {
+    width: 100%; }
+
+/***** Nav- bar *******/
+.main-nav {
+  float: right;
+  opacity: 0;
+  visibility: hidden;
+  margin: 20px 20px 0 0; }
+  .main-nav ul {
+    list-style: none; }
+    .main-nav ul li {
+      font-size: 24px;
+      margin-bottom: .5em; }
+
+/******** Nav button ***********/
+.btn-nav {
+  float: right;
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+  border: 0;
+  background: none; }
+  .btn-nav:focus {
+    outline: none; }
+  .btn-nav span {
+    display: block;
+    border: 0;
+    width: 40px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+    transition: all 0.5s ease; }
+    .btn-nav span:after, .btn-nav span:before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 8px;
+      background-color: white;
+      position: absolute;
+      border-radius: 5px; }
+    .btn-nav span:after {
+      top: 16px; }
+    .btn-nav span:before {
+      top: -16px; }
+  .btn-nav.open + .main-nav {
+    opacity: 1;
+    visibility: visible; }
+  .btn-nav.open span {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+    .btn-nav.open span:before {
+      opacity: 0; }
+    .btn-nav.open span:after {
+      top: 0px;
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+
+#header-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+  height: 405px; }
+
+#header {
+  background: url(../img/background.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 405px;
+  position: relative; }
+  #header::after {
+    content: "";
+    clear: both;
+    display: table; }
