@@ -12,7 +12,8 @@ a {
 /**** Logo ***/
 .logo {
   max-width: 108px;
-  position: absolute; }
+  position: absolute;
+  left: 15px; }
   .logo img {
     width: 100%; }
 
