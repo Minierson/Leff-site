@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: Verdana, sans-serif; }
 
 .container {
   max-width: 1300px;
@@ -17,17 +18,41 @@ a {
   .logo img {
     width: 100%; }
 
+@media (min-width: 1040px) {
+  display: block;
+  position: relative; }
+
 /***** Nav- bar *******/
 .main-nav {
   float: right;
   opacity: 0;
   visibility: hidden;
-  margin: 20px 20px 0 0; }
+  margin: 50px 20px 0 0; }
   .main-nav ul {
     list-style: none; }
     .main-nav ul li {
       font-size: 24px;
-      margin-bottom: .5em; }
+      margin-bottom: .5em;
+      border: 1px solid pink; }
+
+@media (min-width: 580px) and (max-width: 767px) and (orientation: landscape), (min-width: 768px) and (max-width: 1039px) {
+  .main-nav {
+    margin: 10px; }
+    .main-nav li {
+      float: left;
+      margin-left: 18px; } }
+
+@media (min-width: 1040px) {
+  .btn-nav {
+    display: none; }
+  .main-nav {
+    opacity: 1;
+    visibility: visible;
+    margin-right: 110px;
+    margin-top: 0; }
+    .main-nav li {
+      float: left;
+      margin: 15px; } }
 
 /******** Nav button ***********/
 .btn-nav {
