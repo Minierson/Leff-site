@@ -38,7 +38,6 @@ a{
 		li{
 			font-size: 24px;
 			margin-bottom: .5em;
-			border: 1px solid pink;
 		}
 	}
 }
@@ -112,9 +111,10 @@ a{
 		&+ .main-nav{
 			opacity: 1;
 			visibility: visible;
-			background: black;
+			display: block;
 
 		}
+
 		span{
 			transform: rotate(45deg);
 			&:before{
@@ -135,14 +135,15 @@ a{
 	background-repeat: no-repeat;
 	height: 405px;
 	position: relative;
-	&:after{
-		content: "";
-		clear: both;
-		display: table;
-	}
 	&-background{
 		background: linear-gradient(rgba(0,0,0, 0.5), transparent);
-		height: 405px;
+		height: inherit;
+		// position: absolute;
+			&:after{
+				content: "";
+				clear: both;
+				display: table;
+			}
 	}
 }
 
@@ -150,14 +151,14 @@ a{
 .promo-container{
 	display: flex;
 	flex-direction: row;
-	// position: absolute;
+	position: absolute;
 	border: 1px solid black;
 	flex-wrap: wrap-reverse;
-	top: 66px;
+	top: 210px;
 	max-width: inherit;
 
 	justify-content: center;
-	z-index: 1;
+
 
 }
 #promo-image{
@@ -174,4 +175,31 @@ a{
 	p{
 		font-size: 14px;
 	}
+}
+
+
+
+
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
 }
