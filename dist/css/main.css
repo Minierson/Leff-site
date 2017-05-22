@@ -87,7 +87,8 @@ a {
       top: -16px; }
   .btn-nav.open + .main-nav {
     opacity: 1;
-    visibility: visible; }
+    visibility: visible;
+    background: black; }
   .btn-nav.open span {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
@@ -98,17 +99,47 @@ a {
       -webkit-transform: rotate(-90deg);
               transform: rotate(-90deg); }
 
-#header-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
-  height: 405px; }
-
 #header {
   background: url(../img/background.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   height: 405px;
   position: relative; }
-  #header::after {
+  #header:after {
     content: "";
     clear: both;
     display: table; }
+  #header-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+    height: 405px; }
+
+/****** Promo box ******/
+.promo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid black;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  top: 66px;
+  max-width: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1; }
+
+#promo-image {
+  width: 226px;
+  height: 204px; }
+
+.promo-text {
+  color: white;
+  text-align: center; }
+  .promo-text h1 {
+    font-size: 20px; }
+  .promo-text p {
+    font-size: 14px; }

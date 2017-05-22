@@ -112,6 +112,8 @@ a{
 		&+ .main-nav{
 			opacity: 1;
 			visibility: visible;
+			background: black;
+
 		}
 		span{
 			transform: rotate(45deg);
@@ -127,21 +129,49 @@ a{
 
 }
 
-#header-background{
-	background: linear-gradient(rgba(0,0,0, 0.5), transparent);
-	height: 405px;
-}
-
 #header{
 	background: url(../img/background.jpg);
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	height: 405px;
 	position: relative;
-	&::after{
+	&:after{
 		content: "";
 		clear: both;
 		display: table;
+	}
+	&-background{
+		background: linear-gradient(rgba(0,0,0, 0.5), transparent);
+		height: 405px;
+	}
+}
 
-	} 
+/****** Promo box ******/
+.promo-container{
+	display: flex;
+	flex-direction: row;
+	// position: absolute;
+	border: 1px solid black;
+	flex-wrap: wrap-reverse;
+	top: 66px;
+	max-width: inherit;
+
+	justify-content: center;
+	z-index: 1;
+
+}
+#promo-image{
+	width: 226px;
+	height: 204px;
+
+}
+.promo-text{
+	color: white;
+	text-align: center;
+	h1{
+		font-size: 20px;
+	}
+	p{
+		font-size: 14px;
+	}
 }
