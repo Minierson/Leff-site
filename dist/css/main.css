@@ -10,23 +10,27 @@ a {
   text-decoration: none;
   color: white; }
 
+/**** clearfix ****/
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
 /**** Logo ***/
 .logo {
   max-width: 108px;
-  position: absolute;
-  left: 15px; }
+  position: absolute; }
   .logo img {
     width: 100%; }
 
 @media (min-width: 1040px) {
-  display: block;
-  position: relative; }
+  .logo {
+    max-width: 124px; } }
 
 /***** Nav- bar *******/
 .main-nav {
   float: right;
-  opacity: 0;
-  visibility: hidden;
+  display: none;
   margin: 50px 20px 0 0; }
   .main-nav ul {
     list-style: none; }
@@ -45,8 +49,7 @@ a {
   .btn-nav {
     display: none; }
   .main-nav {
-    opacity: 1;
-    visibility: visible;
+    display: block;
     margin-right: 110px;
     margin-top: 0; }
     .main-nav li {
@@ -98,69 +101,7 @@ a {
       -webkit-transform: rotate(-90deg);
               transform: rotate(-90deg); }
 
-#header {
+.main-hdr {
   background: url(../img/background.jpg);
   background-position: 50% 50%;
-  background-repeat: no-repeat;
-  height: 405px;
-  position: relative; }
-  #header-background {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
-    height: inherit; }
-    #header-background:after {
-      content: "";
-      clear: both;
-      display: table; }
-
-/****** Promo box ******/
-.promo-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  left: 200px;
-  position: absolute;
-  border: 1px solid black;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
-  top: 210px;
-  max-width: inherit;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-#promo-image {
-  width: 226px;
-  height: 204px; }
-
-.promo-text {
-  color: white;
-  text-align: center; }
-  .promo-text h1 {
-    font-size: 20px; }
-  .promo-text p {
-    font-size: 14px; }
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-.clearfix:after {
-  clear: both; }
+  background-repeat: no-repeat; }
