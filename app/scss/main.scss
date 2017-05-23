@@ -151,13 +151,14 @@ a{
 .promo-container{
 	display: flex;
 	flex-direction: row;
+	left: 200px;
 	position: absolute;
 	border: 1px solid black;
 	flex-wrap: wrap-reverse;
 	top: 210px;
 	max-width: inherit;
 
-	justify-content: center;
+	justify-content: space-between;
 
 
 }

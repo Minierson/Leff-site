@@ -121,15 +121,16 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  left: 200px;
   position: absolute;
   border: 1px solid black;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
   top: 210px;
   max-width: inherit;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 #promo-image {
   width: 226px;
