@@ -52,7 +52,7 @@ a{
 .dropdown{
 	position: relative;
 	display: inline-block;
-	padding: 0 0 0 16px;
+	// padding: 0 0 0 16px;
 	&-content{
 		display: none;
 		position: absolute;
@@ -89,14 +89,15 @@ a{
 		li{
 			font-size: 18px;
 			margin-bottom: .5em;
+			margin: 0;
 			padding: 16px;
 			text-align: left;
 			&:hover{
 				background-color: rgba(50, 55, 79, 0.7);
 			}
 			a{
-				padding: 16px;
 				text-align: center;
+				
 			}
 		}
 	}
@@ -121,10 +122,10 @@ a{
 
 		display: block;
 		margin-right: 110px;
-		margin-top: 0;
+		margin-top: 10px;
 		li{
 			float: left;
-			 margin:15px;
+			padding: 16px;
 		}
     }
 }

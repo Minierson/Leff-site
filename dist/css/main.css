@@ -38,8 +38,7 @@ a {
 
 .dropdown {
   position: relative;
-  display: inline-block;
-  padding: 0 0 0 16px; }
+  display: inline-block; }
   .dropdown-content {
     display: none;
     position: absolute;
@@ -69,12 +68,12 @@ a {
     .main-nav ul li {
       font-size: 18px;
       margin-bottom: .5em;
+      margin: 0;
       padding: 16px;
       text-align: left; }
       .main-nav ul li:hover {
         background-color: rgba(50, 55, 79, 0.7); }
       .main-nav ul li a {
-        padding: 16px;
         text-align: center; }
 
 @media (min-width: 580px) and (max-width: 767px) and (orientation: landscape), (min-width: 768px) and (max-width: 1039px) {
@@ -91,10 +90,10 @@ a {
   .main-nav {
     display: block;
     margin-right: 110px;
-    margin-top: 0; }
+    margin-top: 10px; }
     .main-nav li {
       float: left;
-      margin: 15px; } }
+      padding: 16px; } }
 
 /******** Nav button ***********/
 .btn-nav {
