@@ -204,30 +204,58 @@ a{
 .promo-container{
 	display: flex;
 	flex-direction: row;
-	// left: 200px;
-	position: relative;
+	margin: 0 40px;
 	border: 1px solid black;
 	flex-wrap: wrap-reverse;
-	// top: 210px;
 	max-width: inherit;
-
 	justify-content: space-between;
 
 
 }
-#promo-image{
+.promo-image{
+	display: flex;
 	width: 226px;
 	height: 204px;
+	justify-content: center;
+	img{
+		width:100%;
+		
+	}
 
 }
 .promo-text{
 	color: white;
 	text-align: center;
+	border: 1px solid red;
+	width: 416px;
 	h1{
 		font-size: 20px;
 	}
 	p{
+		line: 24px;
 		font-size: 14px;
 	}
 }
+.promo-btn{
+	background: $buttonGreen;
+	min-width: 84px;
+	height: 27px;
+	border-radius: 15px;
+	border: none;
+	&:active{
+		background: red;
+	}
+	a{
+		font-size: 16px;
+	}
+}
 
+@media (min-width: 1040px){
+	.promo-container{
+		margin: 50px 100px 0 100px;
+	}
+	.promo-image{
+		width: 500px;
+		height: 460px;
+	}
+}
