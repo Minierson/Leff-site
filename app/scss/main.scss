@@ -292,3 +292,48 @@ a{
 // 		margin-top: 35px;
 // 	}
 // }
+
+/***** arrow ******/
+.arrow{
+	margin: 0 auto;
+	width: 44px;
+	height: 30px;
+	position: relative;
+	span{
+		position: absolute;
+		background-color: $buttonGreen;
+		height: 8px;
+		width: 30px;
+		border-radius: 5px;
+		transform: rotate(45deg) translate(5px, 9px);
+		&:after{
+			content: '';
+			position: absolute;
+			background-color: $buttonGreen;
+			height: 8px;
+			width: 30px;
+			border-radius: 5px;
+			transform: rotate(-90deg) translate(12px, 12px);
+		}
+	}
+}
+@media (min-width: 580px) and (max-width: 767px) and (orientation: landscape), 
+
+       (min-width: 768px){
+		   .arrow{
+			   display: none;
+		   }
+	   }
+
+/********** Info about the company ****************/
+
+#oNas{
+	margin: 0 auto;
+	max-width: 970px;
+	text-align: center;
+	padding: 10px;
+	h2{
+		color: $buttonGreen;
+		font-size: 24px;
+	}
+}

@@ -228,3 +228,41 @@ a {
     padding-top: 30px;
     padding-left: 100px;
     text-align: left; } }
+
+/***** arrow ******/
+.arrow {
+  margin: 0 auto;
+  width: 44px;
+  height: 30px;
+  position: relative; }
+  .arrow span {
+    position: absolute;
+    background-color: #8fd74f;
+    height: 8px;
+    width: 30px;
+    border-radius: 5px;
+    -webkit-transform: rotate(45deg) translate(5px, 9px);
+            transform: rotate(45deg) translate(5px, 9px); }
+    .arrow span:after {
+      content: '';
+      position: absolute;
+      background-color: #8fd74f;
+      height: 8px;
+      width: 30px;
+      border-radius: 5px;
+      -webkit-transform: rotate(-90deg) translate(12px, 12px);
+              transform: rotate(-90deg) translate(12px, 12px); }
+
+@media (min-width: 580px) and (max-width: 767px) and (orientation: landscape), (min-width: 768px) {
+  .arrow {
+    display: none; } }
+
+/********** Info about the company ****************/
+#oNas {
+  margin: 0 auto;
+  max-width: 970px;
+  text-align: center;
+  padding: 10px; }
+  #oNas h2 {
+    color: #8fd74f;
+    font-size: 24px; }
