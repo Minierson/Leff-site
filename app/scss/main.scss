@@ -334,32 +334,59 @@ a{
 }
 /********* service boxes**************/
 .img-wrapper{
+	margin-top:80px; 
 	display: flex;
 	flex-wrap: wrap;
-	// justify-content: center;
+	justify-content: center;
 }
+
 .service-box{
-	width: 434px;
-	height: 434px;
-	margin: 0;
-	padding: 0;
 	position: relative;
-	border: 1px solid red;
-	flex: 1 1 100%; 
-	img{
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		z-index: 1;
+	height: 320px;
+	width: 321px;
+	&:nth-child(1){
+		background: url('/img/biuro_wirt_320x321.jpg') left top no-repeat;
+		background-size: cover;
+	}
+	&:nth-child(2){
+		background: url('/img/digitalizacja_img_320x314.jpg') left top no-repeat;
+		background-size: cover;
+	}
+	&:nth-child(3){
+		background: url('/img/sklep_img_320x320.jpg') left top no-repeat;
+		background-size: cover;
 	}
 	h1{
 		position: absolute;
+		color: white;
 		z-index: 2;
 		top: 25px;
 		left: 25px;
+		text-shadow: 4px 3px 8px black;
+	}
+	.promo-btn{
+		position: absolute;
+		bottom: 23px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 173px;
+		height: 52px;
+		border-radius: 25px;
+		a{
+			font-size: 24px;
+		}
 	}
 
 	
+}
+@media (min-width: 768px){
+	.img-wrapper{
+		flex-wrap: nowrap;
+	}
+}
+@media (min-width: 1024px){
+	.service-box{
+		height: 436px;
+		width: 434px;
+	}
 }
