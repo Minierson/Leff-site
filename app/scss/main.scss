@@ -390,3 +390,24 @@ a{
 		width: 434px;
 	}
 }
+
+/************* external links and images *****/
+.trade-wrapper{
+	display: block;
+	margin-top: 58px;
+
+	h2{
+		text-align: center;
+		font-size: 16px;
+	}
+	.logo-wrapper{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		margin: 30px 150px;
+	}
+	a{
+		align-self: center;
+	}
+}
+

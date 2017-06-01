@@ -320,3 +320,24 @@ a {
   .service-box {
     height: 436px;
     width: 434px; } }
+
+/************* external links and images *****/
+.trade-wrapper {
+  display: block;
+  margin-top: 58px; }
+  .trade-wrapper h2 {
+    text-align: center;
+    font-size: 16px; }
+  .trade-wrapper .logo-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 30px 150px; }
+  .trade-wrapper a {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
