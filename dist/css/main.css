@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: Verdana, sans-serif; }
+  font-family: Verdana, sans-serif;
+  list-style: none; }
 
 .container {
   max-width: 1300px;
@@ -290,7 +291,7 @@ a {
     background: url("/img/digitalizacja_img_320x314.jpg") left top no-repeat;
     background-size: cover; }
   .service-box:nth-child(3) {
-    background: url("/img/sklep_img_320x320.jpg") left top no-repeat;
+    background: url("/img/sklep_img_434x436.jpg") left top no-repeat;
     background-size: cover; }
   .service-box h1 {
     position: absolute;
@@ -341,3 +342,57 @@ a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center; }
+
+/*********** kontakt ***************/
+.kontakt-box {
+  background: #3863a3;
+  margin-top: 70px; }
+  .kontakt-box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0; }
+    .kontakt-box ul li {
+      padding: 25px;
+      color: white; }
+      .kontakt-box ul li span {
+        font-weight: bold;
+        color: red; }
+
+/************ about *****************/
+.about {
+  background: #3863a3;
+  color: white;
+  position: relative; }
+  .about .text {
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    line-height: 2; }
+    @media (min-width: 768px) {
+      .about .text {
+        width: 70%;
+        padding: 50px 10px 50px 150px; } }
+  .about img {
+    display: block;
+    padding: 10px; }
+    @media (min-width: 768px) {
+      .about img {
+        position: absolute;
+        bottom: 20px;
+        right: 20px; } }
+
+/************** google map **************/
+.map {
+  width: 100%;
+  height: 350px; }

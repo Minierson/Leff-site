@@ -1,4 +1,44 @@
    <footer>
+     <article id="kontakt">
+       <div class="kontakt-box">
+         <ul>
+           <li><span>Adres:</span> Św. Rocha 33 lok. 5, Białystok</li>
+           <li><span>Telefon:</span> 511 340 808</li>
+           <li><span>e-mail:</span> biuro-leff@wp.pl</li>
+         </ul>
+       </div>
+      <div class="map" id="googleMap"></div>
+      <script>
+        function initMap() {
+          var leff = { lat: 53.134207, lng: 23.138446 };
+          var map = new google.maps.Map(document.getElementById('googleMap'), {
+            zoom: 17,
+            scrollwheel: false,
+            disableDefaultUI: true,
+            center: leff
+          });
+          var marker = new google.maps.Marker({
+            position: leff,
+            map: map
+          });
+          var infowindow = new google.maps.InfoWindow({
+            content: 'Leff <br/> Św. Rocha 33 lok. 5'
+          });
+          infowindow.open(map,marker);
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsXuNVh3OXVkXumOwmx3_t3K2pGeJGvvU&callback=initMap">
+
+      </script>
+       <div class="about clearfix">
+         <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Aenean sed libero quis erat dictum pretium. Aenean congue est quam, at viverra nibh auctor ut.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit luctus lobortis. In nec lacus at diam sagittis iaculis. Vivamus aliquet risus magna, eget pellentesque mi feugiat a. Cras condimentum turpis efficitur dui sollicitudin imperdiet.
+  Nullam at pulvinar erat. Mauris ut congue diam. </p>
+  <img src="/img/layout_leff_logo_alfa.png" alt="Leff logo"/>
+       </div>
+
+     </article>
 
    </footer>
    </div>

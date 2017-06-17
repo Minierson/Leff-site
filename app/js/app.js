@@ -41,4 +41,17 @@ leff.addEventListener('mouseout', function(){
     this.setAttribute('src', '/img/leff-hurt_bw.png');
 });
 
+/***************** Google map location and initialization ***/
+
+function initMap(){
+    var leff = {lat: 53.134207, lng: 23.138446};
+    var map = new google.maps.Map(document.getElementById('googleMap'),{
+    zoom: 4,
+    center: leff
+});
+var marker = new google.maps.Marker({
+    position: leff,
+    map: map
+});
+}
 
